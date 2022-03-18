@@ -1,0 +1,81 @@
+namespace ATVUC04.Controllers
+{
+ public class PacotesTuristicosController : Controller
+    {
+        public IActionResult ListarPacks()
+        {
+
+            if (HttpContext.Session.GetInt32("IdUsuario") == null)
+            {
+                return RedirectToAction("Login", "Usuario");// retorna para açao login da controller usuario
+            }
+
+            PacotesTuristicosRepository Pacotes = new PacotesTuristicosRepository();
+            
+            return View (Pacotes.ListarPacotes());
+        }
+
+        public IActionResult ExcluirPacks(int Id)
+        {
+
+            if (HttpContext.Session.GetInt32("IdUsuario") == null)
+            {
+                return RedirectToAction("Login", "Usuario"); // retorna para açao login da controller usuario
+            }
+
+            PacotesTuristicosRepository Pacotes = new PacotesTuristicosRepository();
+            
+            return View ("Lista");
+        }
+
+        public IActionResult CadastrarPacks()
+        {
+
+            if (HttpContext.Session.GetInt32("IdUsuario") == null)
+            {
+                return RedirectToAction("Login", "Usuario");// retorna para açao login da controller usuario
+            }
+
+            return View();
+        }
+
+        [HttpPost]
+
+        public IActionResult CadastrarPacks(PacotesTuristicos Pacotes)
+        {
+
+            PacotesTuristicosRepository Packs = new PacotesTuristicosRepository();
+            
+            ViewData["mensagem"] = "Pacote de viagem cadastrado com sucesso";
+            return View();
+        }
+
+        public IActionResult AlterarPacks(int pct)
+        {
+
+            if (HttpContext.Session.GetInt32("IdUsuario") != null)
+            {
+                PacotesTuristicosRepository pack = new PacotesTuristicosRepository();
+                PacotesTuristicos PacoteEncontrado = pack.BuscarPacotesPorId(pct);
+
+                return View(PacoteEncontrado);
+            }
+            return RedirectToAction("Login", "Usuario");// retorna para açao login da controller usuario
+
+        }
+
+        [HttpPost]
+        public IActionResult AlterarPacks(PacotesTuristicos Pct)
+        {
+
+
+            PacotesTuristicosRepository Packs = new PacotesTuristicosRepository();
+            Packs.AlterarPacotes(Pct);
+
+            return RedirectToAction("ListarPacks");
+        }
+    }   
+}
+
+   
+
