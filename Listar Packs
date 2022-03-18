@@ -1,0 +1,47 @@
+@model List<PacotesTuristicos>
+
+@{
+    ViewData["Title"] = "ListarPacks";
+}
+
+<h1>Pacotes Turísticos cadastrados</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Origem</th>
+            <th>Destino</th>
+            <th>Atrativos</th>
+            <th>Saida</th>
+            <th>Retorno</th>
+            <th>Usuario</th>
+            <th>Operações</th>
+
+        </tr>
+    </thead>
+
+    @foreach (PacotesTuristicos P in Model)
+    {
+        <tr>
+            <td>@P.Id</td>
+            <td>@P.Nome</td>
+            <td>@P.Origem</td>
+            <td>@P.Destino</td>
+            <td>@P.Atrativos</td>
+            <td>@P.Saida</td>
+            <td>@P.Retorno</td>
+            <th>@P.Usuario</th>
+            
+
+            
+            <td>
+                <a href="/PacotesTuristicos/AlterarPacks?pct=@P.Id">Alterar</a>
+                <a href="/PacotesTuristicos/ExcluirPacks?Id=@P.Id">Excluir</a>
+            </td>
+
+        </tr>
+    }
+
+</table>
