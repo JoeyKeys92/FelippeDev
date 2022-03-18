@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+
+<html lang="pt-br"> 
+<head> <title> Arlopes Representação Comercial </title>
+<meta charset="utf-8"/>
+<meta name="keywords" content="Senac.Senac RS"/>
+<meta name="description" content="feito pelo desenvolvedor Felippe Lopes"/>
+
+<body>
+
+<h1>Arlopes Representação Comercial</h1>
+
+<h2> Empresa prestadora de serviço no ramo automotivo </h2>  
+    
+
+
+<p> <strong> Conheça os nossos serviços através do links disponiveis abaixo </strong> </p>
+
+<p>
+
+
+  <div>
+
+  <strong> <a href="">Vistorias</a> <a href="">Creditos Pré/Pos</a> <a href="">Laudo Cautelar</a> </strong>
+
+  </div>
+
+
+</p>
+
+
+
+ <strong> Alguma duvida? Clique no botão abaixo para Esclarecimentos </strong> 
+
+
+
+
+   
+<p>
+   
+    
+    
+    <input type="button"  value="Duvidas sobre o nosso serviço">
+    
+
+
+
+</p>
+
+
+<p>
+
+
+    <div>
+
+        
+    <img widht="200" height="200" src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3136671:1631799869/carros.jpg?f=16x9&h=720&w=1280&$p$f$h$w=947b22d">
+    
+    
+   <p> <strong> Frota de carros que realizaram o procedimento de Vistorias através do nosso serviços de laudo cautelar </strong> </p>
+    
+    
+    <h3> Quer saber quais são os postos disponiveis para você realizar o procedimento laudo cautelar no Rio de Janeiro, clique no botão abaixo para saber aonde realizar sua vistoria </h3>
+    
+    <input type="button" value="Disponibilidade de postos de vistoria no Estado do Rio de Janeiro">
+
+
+    </div>
+
+    
+
+</p>
+
+    <div>
+
+    <img width="300" height="300" src="https://www.carrobrasil.com.br/imagem_texto/20160316_165849_foto-texto.jpg">
+    
+    
+    <p> <strong> Temos parcerias com Agencias de carro para realizar os nossos serviços em locais de confianças e também caso queira realizar troca do seu veiculo após a realização da vistoria completa </strong> </p>
+    
+    <h3> Conheça as agências parceiras da nossa empresa clicando no botão abaixo </h3>  
+
+    <input type="button"  value="Agencias parceiras da Empresa Arlopes">
+
+
+
+   </div>
+
+
+ </head>
+
+ </body>
+
+</html>
