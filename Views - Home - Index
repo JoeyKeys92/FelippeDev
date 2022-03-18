@@ -1,0 +1,65 @@
+@{
+    ViewData["Title"] = "Página Inicial";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Pacotes Turisticos</h1>
+    
+</div>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Pacotes Turisticos</title>
+    <meta charset="utf-8">
+    <meta name = "keywords" content="HTML,CSS,JAVA">
+    <meta name="description" content="pacotes, viagem, exterior">
+    </head>
+    <body style="background-color: aqua;">
+        <header>
+        </header>
+        <main>
+             <div >
+            <style> h1{ color: rgb(0, 0, 0)};</style>
+            <style type="text/css">
+                h1{ font-style: oblique;}
+               
+            </style>
+            
+        <div >
+            <a href="Usuario/Login">
+            <img src="Imagens/NOVAYORK.png" style="float: left;" width="550" height="550">
+            </a>
+        </div>
+         <br>
+        <div >
+            <a href="Usuario/Login">
+            <img src="Imagens/LONDRES.png" style="float: right;" width="550" height="550">
+            </a>
+        </div>
+         <br>
+        <div >
+            <a href="Usuario/Login">
+            <img src="Imagens/BERMUDAS.png" style="float: left;" width="550" height="550">
+            </a>
+        </div>
+         <br>
+        <div >
+            <a href="Usuario/Login">
+            <img src="Imagens/BAHAMAS.png" style="float: right;" width="550" height="550">
+            </a>
+        </div>
+        <br>
+         <div >
+            <a href="Usuario/Login">
+            <img src="Imagens/paris.png" style="text-align: center; display: block;"  width="550" height="550">
+            </a>
+        </div>
+        
+
+        </main>
+        <br>
+        <footer>
+            <p> MODEL Turismo </p>
+        </footer>
+    </body>
+</html>
