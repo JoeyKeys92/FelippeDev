@@ -1,0 +1,16 @@
+{
+    public class Dados
+
+    {
+     public static Contato  Agend {get; set;}
+
+     static Dados ()
+
+     {
+
+         Agend = new Contato ();
+     }
+
+  }
+
+}
