@@ -1,0 +1,20 @@
+{
+    public class  Contato
+    {   
+        //Atributo da classe Contato responsaveis por manipular os dados para agendamento
+        private List<Cadastro> lista; // lista de cdaastro 
+
+        public Contato()
+        {
+          lista = new List<Cadastro>(); // instanciando lista
+        }   
+        public void Adc(Cadastro c) 
+        {
+            lista.Add(c); //método que adiciona um agendamento a lista 
+        }
+          public List<Cadastro> Listar() //Modificador de acesso(public)  + tipo de retorno(list<Cadastro>) + nome do método(listar)
+        {
+            return lista; // método para retornar lista 
+        }
+    }
+}
