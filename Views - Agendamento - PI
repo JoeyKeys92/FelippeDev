@@ -1,0 +1,75 @@
+@model Cadastro
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Arlopes Representação Comercial</title>
+</head>
+
+<body>
+
+    <head>
+
+        <h1>Arlopes Representação Comercial</h1> 
+
+        <nav>
+            <a asp-controller="Home" asp-action="Index" >Início |</a>
+            <a asp-controller="Home" asp-action="Servicos" >Serviços | </a>
+            <a asp-controller="Home" asp-action="Agendamento">Agendamento</a>
+        </nav>
+
+    </head>
+    </br>
+    <div>
+        <main>
+
+            <h2>Agende já seu serviço!</h2>
+            </br>
+            <h3>Pré-agendamento</h3>
+            </br>
+            <p>Preencha os campos a seguir com seus dados</p>
+            </br>
+            <form method="post" asp-controller="Home" asp-action="Listagem">
+
+                <label asp-for="nome"><strong>Adicione seu nome: </strong></label>
+                <input asp-for="nome" required>
+                </br></br>
+                <label asp-for="tel"><strong>Adicione seu Telefone: </strong></label>
+                <input asp-for="tel" required>
+                </br></br>
+                <label asp-for="data"><strong>Informe a data que desejaria ser atendido: </strong></label>
+                <input type="date" asp-for="data" required>
+                </br></br>
+                <label asp-for="automoveis"><strong>Selecione seu veiculo: </strong></label>
+              <select asp-for="automoveis" required>
+                  <option value="Moto 125cc">Moto 125cc</option>
+                  <option value="Moto 150cc">Moto 150cc</option>
+                  <option value="Moto 200cc">Moto 200cc</option>
+                  <option value="Carro Heath">Carro Heath</option>
+                  <option value="Carro Sedan">Carro Sedan</option>
+                  <option value="Veiculos Grande Porte">Veiculo Grande Porte</option>
+              </select>
+
+                </br></br>
+                <label asp-for="descricao"><strong>Informe sua necessidade: </strong></label>
+                </br>
+                <textarea asp-for="descricao" name="descricao" cols="30" rows="10" required>Informe sua necessidade: </textarea>
+                </br></br>
+            <input type="submit" value="Agendar">
+
+            </form>
+            </br>
+              
+        </main>
+    </div>
+    
+    </br>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
