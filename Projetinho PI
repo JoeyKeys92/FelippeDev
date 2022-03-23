@@ -1,0 +1,60 @@
+namespace Ativ3_PI.Controllers;
+
+public class HomeController : Controller
+{
+    private readonly ILogger<HomeController> _logger;
+
+    public HomeController(ILogger<HomeController> logger)
+    {
+        _logger = logger;
+    }
+
+    public IActionResult Index()
+    {
+        return View();
+    }
+
+    public IActionResult Privacy()
+    {
+        return View();
+    }
+
+    public IActionResult Agendamento()
+        {
+            // chama o formulário 
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Agendamento(Cadastro c)
+        {
+            //método que irá armezenar os dados do agendamento passados pelo usuário
+            Dados.Agend.Adc(c);
+            return View();
+        }
+
+        public IActionResult Servicos()
+        {
+            
+            return View(); //retorna view da página de serviços
+        }
+
+        public IActionResult Listagem(Cadastro c)
+        {
+            Dados.Agend.Adc(c);
+            List<Cadastro> lista = Dados.Agend.Listar(); 
+            return View(lista); //retorna listagem dados inseridos no formulario.
+        }
+
+
+    
+        
+     
+    
+
+    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+    public IActionResult Error()
+    {
+        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+    }
+}
