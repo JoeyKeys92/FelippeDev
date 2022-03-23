@@ -1,0 +1,55 @@
+@model List<Cadastro>
+
+<head>
+<style>
+table, th, td {
+  border: 2.5px solid black;
+}
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+
+<h2>Seu pré-agendamento foi realizado com sucesso!</h2>
+</br>
+<h3>Confira abaixo seus dados</h3>
+</br>
+@foreach (Cadastro i in Model)
+{
+    <table>
+
+        <tr>
+            <th><strong>Nome</strong></th>
+            <th><strong>Telefone</strong></th>
+            <th><strong>Data para sua Vistoria</strong></th>
+            <th><strong>Seu Carro</strong></th>
+            <th><strong>Sua necessidade</strong></th>
+        </tr>
+        <td>
+            @i.nome
+        </td>
+
+        <td>
+            @i.telefone
+        </td>
+
+        <td>
+            @i.date.ToString("dd/MM/yyyy")
+        </td>
+
+        <td>
+            @i.automoveis
+        </td>
+
+        <td>
+            @i.descricao
+        </td>
+
+    </table>
+    <br><br>
+
+    <p>Caso haja divergencias nos dados, realize um novo cadastro clicando <a href="/Home/Agendamento"> aqui.</a></p>
+
+}
