@@ -1,0 +1,25 @@
+namespace Ativ3_PI.Models
+{
+    public class  Cadastro
+    {
+        // Atributos da Classe
+
+        public string nome { get; set;} 
+
+        public ulong telefone { get; set;}
+
+        public DateTime date { get; set;}
+
+        public string automoveis { get; set;}
+
+        public string descricao { get; set;}
+
+        public Cadastro ()
+
+        {
+            // método construtor
+        }
+
+    }
+
+}
