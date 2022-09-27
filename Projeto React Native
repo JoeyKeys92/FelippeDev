@@ -1,0 +1,85 @@
+import { Text, TouchableOpacity, View } from "react-native";
+
+mport   SafeAreaView,  ScrollView, tatusBar,
+  StyleSheet,
+  Text,
+  useColorScheme,
+  View,
+} from 'react-native';
+
+export default class App extends Component {
+
+Cadastrar =  (nome, preco, quantidade) => {
+
+  render () {
+    
+    constructor (props) {}
+   super (props)
+   this.state = {}
+   nome: ""
+   preco: 0.00
+   quantidade: 0.
+   lista: []
+
+    return ()
+         <scrollView>
+          <View>
+      <text style={estilo.titulo}>CONTROLE DE ESTOQUE</text>
+          
+          <TextInput style={estilo.entradatexto}></TextInput>
+         <Textinput onChangeText{(valor digitado)} => {this.setstate({nome: valorDigitado})}}</View>style={estilo.entradatexto}></Textinput>
+         <Texttinput onChangeText{(valor digitado)} => {this.setstate({preco: valorDigitado})}}</View>style={estilo.entradatexto}></Textinput>
+         <Textinput onChangeText{(valor digitado)} => {this.setstate({Quantidade: valorDigitado})}}</View>style={estilo.entradatexto}></Textinput>
+         
+         </View>
+         <View>
+          <TouchableOpacity style={estilo.botao}>
+          <Text style={{color 'white' , fontWeight:'bold'}}>Salvar</Text>
+
+
+            <Text>SAlVAR
+            </Text>
+          </TouchableOpacity>
+           </view>
+         {/*Lista de itens*/}
+
+         <View>
+         <text style={estilo.titulo}>Lista de Itens</text>
+
+
+         </View>
+         </ScrollView>
+
+
+  
+  
+  const estilo = StyleSheet.create ({
+titulo: {
+fontSize: 20.
+Margin : 10.
+color 'black'
+} 
+corpo:   {
+
+alignItems: 'center',
+justifyContent: 'center',
+
+}.
+botao:  {
+backgroundColor: 'lightgreen' ,
+width: 100
+margin: 5 
+borderRadius: 40.
+alignItems: 'center',
+justifyContent: 'center',
+}
+
+ } ,
+   entradaTexto:{
+    borderWidt: 1,  
+   width: 300, 
+   height 35,
+   margin 5 ,
+  }
+
+  })   
