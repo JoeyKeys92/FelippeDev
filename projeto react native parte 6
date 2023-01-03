@@ -1,0 +1,12 @@
+``Imoveis``
+
+
+export default class Imovel {
+    constructor(aluguel,venda,casa,apartamento,comercio) {
+        this.id = id;
+        this.aluguel = aluguel;
+        this.venda = venda;
+        this.casa = casa;
+        this.apartamento = apartamento;
+        this.comércio = comercio;     
+    }
